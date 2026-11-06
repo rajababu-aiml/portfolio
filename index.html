@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,25 +40,36 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .code-font { font-family: 'Fira Code', monospace; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+
         .glass {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
         .dark .glass {
             background: rgba(15, 23, 42, 0.75);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
         .gradient-text {
             background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .gradient-border {
             border: 1px solid transparent;
             background-image: linear-gradient(to right, #1e293b, #1e293b), linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -66,39 +78,53 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+<body
+    class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
 
     <!-- NAVIGATION HEADER -->
-    <header class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+    <header
+        class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 <!-- Brand Logo -->
                 <a href="#home" class="flex items-center space-x-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-purple to-brand-cyan flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-purple to-brand-cyan flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
                         <i class="fa-solid font-bold text-lg fa-brain"></i>
                     </div>
-                    <span class="text-xl font-bold tracking-tight">AI/ML<span class="gradient-text">.Engineer</span></span>
+                    <span class="text-xl font-bold tracking-tight">AI/ML<span
+                            class="gradient-text">.Engineer</span></span>
                 </a>
 
                 <!-- Desktop Nav Links -->
-                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 font-medium text-sm text-slate-600 dark:text-slate-300">
-                    <a href="#home" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Home</a>
-                    <a href="#about" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">About</a>
-                    <a href="#courses" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Courses</a>
-                    <a href="#projects" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Projects</a>
-                    <a href="#skills" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Skills</a>
-                    <a href="#contact" class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Contact</a>
+                <nav
+                    class="hidden md:flex items-center space-x-1 lg:space-x-2 font-medium text-sm text-slate-600 dark:text-slate-300">
+                    <a href="#home"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Home</a>
+                    <a href="#about"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">About</a>
+                    <a href="#courses"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Courses</a>
+                    <a href="#projects"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Projects</a>
+                    <a href="#skills"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Skills</a>
+                    <a href="#contact"
+                        class="px-3 py-2 rounded-lg hover:text-brand-600 dark:hover:text-brand-500 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">Contact</a>
                 </nav>
 
                 <!-- Actions (Theme Toggle & Mobile Menu Button) -->
                 <div class="flex items-center space-x-3">
                     <!-- Theme Toggle Button -->
-                    <button id="themeToggleBtn" aria-label="Toggle Theme" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/50 shadow-sm transition-all">
+                    <button id="themeToggleBtn" aria-label="Toggle Theme"
+                        class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/50 shadow-sm transition-all">
                         <i id="themeIcon" class="fa-solid fa-moon text-lg"></i>
                     </button>
 
                     <!-- Mobile Menu Trigger -->
-                    <button id="mobileMenuBtn" aria-label="Open Navigation Menu" class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300">
+                    <button id="mobileMenuBtn" aria-label="Open Navigation Menu"
+                        class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300">
                         <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -106,14 +132,23 @@
         </div>
 
         <!-- Mobile Menu Nav -->
-        <div id="mobileMenu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md">
+        <div id="mobileMenu"
+            class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md">
             <div class="px-4 pt-2 pb-6 space-y-2 text-base font-medium">
-                <a href="#home" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Home</a>
-                <a href="#about" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">About</a>
-                <a href="#courses" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Courses & Certifications</a>
-                <a href="#projects" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Projects & Work</a>
-                <a href="#skills" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Skills</a>
-                <a href="#contact" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Contact</a>
+                <a href="#home"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Home</a>
+                <a href="#about"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">About</a>
+                <a href="#courses"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Courses
+                    & Certifications</a>
+                <a href="#projects"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Projects
+                    & Work</a>
+                <a href="#skills"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Skills</a>
+                <a href="#contact"
+                    class="mobile-nav-link block px-4 py-2.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600">Contact</a>
             </div>
         </div>
     </header>
@@ -121,14 +156,19 @@
     <!-- HERO SECTION -->
     <section id="home" class="relative py-12 md:py-24 overflow-hidden">
         <!-- Decorative Glow Background Elements -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/15 dark:bg-brand-500/10 rounded-full blur-3xl -z-10"></div>
-        <div class="absolute top-1/3 right-10 w-72 h-72 bg-brand-purple/15 dark:bg-brand-purple/10 rounded-full blur-3xl -z-10"></div>
+        <div
+            class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/15 dark:bg-brand-500/10 rounded-full blur-3xl -z-10">
+        </div>
+        <div
+            class="absolute top-1/3 right-10 w-72 h-72 bg-brand-purple/15 dark:bg-brand-purple/10 rounded-full blur-3xl -z-10">
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <!-- Left Details -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center px-3.5 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs sm:text-sm font-semibold tracking-wide">
+                    <div
+                        class="inline-flex items-center px-3.5 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs sm:text-sm font-semibold tracking-wide">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span>
                         Available for AI / ML Roles & Projects
                     </div>
@@ -138,40 +178,50 @@
                     </h1>
 
                     <!-- Dynamic Typing Headline -->
-                    <div class="text-xl sm:text-2xl font-semibold text-slate-600 dark:text-slate-300 h-10 flex items-center justify-center lg:justify-start">
+                    <div
+                        class="text-xl sm:text-2xl font-semibold text-slate-600 dark:text-slate-300 h-10 flex items-center justify-center lg:justify-start">
                         <span id="typedText" class="code-font text-brand-600 dark:text-brand-cyan"></span>
                         <span class="w-0.5 h-6 bg-brand-500 ml-1 animate-pulse"></span>
                     </div>
 
-                    <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Passionate about crafting intelligent systems, fine-tuning Large Language Models, scalable Computer Vision pipelines, and modern MLOps architectures. Turning complex data into real-world AI solutions.
+                    <p
+                        class="text-slate-600 dark:text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Passionate about crafting intelligent systems, fine-tuning Large Language Models, scalable
+                        Computer Vision pipelines, and modern MLOps architectures. Turning complex data into real-world
+                        AI solutions.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#projects" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-purple to-brand-cyan text-white font-semibold shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] transition-all text-center">
+                        <a href="#projects"
+                            class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-purple to-brand-cyan text-white font-semibold shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] transition-all text-center">
                             <i class="fa-solid fa-code-branch mr-2"></i> View Projects
                         </a>
-                        <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-brand-500 text-slate-800 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all text-center">
+                        <a href="#contact"
+                            class="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-brand-500 text-slate-800 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all text-center">
                             <i class="fa-regular fa-envelope mr-2"></i> Get In Touch
                         </a>
                     </div>
 
                     <!-- Social Media Quick Links -->
                     <div class="flex items-center justify-center lg:justify-start space-x-4 pt-4">
-                        <a href="https://github.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
+                        <a href="https://github.com" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
                             <i class="fa-brands fa-github text-lg"></i>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
                             <i class="fa-brands fa-linkedin-in text-lg"></i>
                         </a>
-                        <a href="https://kaggle.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
+                        <a href="https://kaggle.com" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-500 hover:border-brand-500 transition-colors">
                             <i class="fa-brands fa-kaggle text-lg"></i>
                         </a>
-                        <a href="https://instagram.com/iam_devil.12x/" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
-                                <i class="fa-brands fa-instagram text-lg"></i>
-                            
-                            </a>
+                        <a href="https://instagram.com/iam_devil.12x/" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+
+                        </a>
                     </div>
                 </div>
 
@@ -179,25 +229,30 @@
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative w-80 h-80 sm:w-96 sm:h-96">
                         <!-- Orbit Ring Decor -->
-                        <div class="absolute -inset-4 rounded-full border border-dashed border-brand-500/40 animate-spin" style="animation-duration: 25s;"></div>
-                        
+                        <div class="absolute -inset-4 rounded-full border border-dashed border-brand-500/40 animate-spin"
+                            style="animation-duration: 25s;"></div>
+
                         <!-- Glowing Glow Border Frame -->
-                    <div class="w-full h-full aspect-square rounded-full p-1 bg-gradient-to-tr from-brand-600 via-brand-purple to-brand-cyan shadow-2xl shadow-brand-500/20">
-    <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 relative group">
-        <img src="profile.jpeg" 
-             alt="Profile Picture" 
-             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-             onerror="this.src='https://placehold.co/600x600/0f172a/ffffff?text=AI+Developer'">
-        
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
-        <div class="absolute bottom-3 left-4 right-4 p-2 rounded-xl glass border border-white/10 text-center">
-            <p class="text-xs font-semibold text-white">PyTorch • HuggingFace • MLOps</p>
-        </div>
-    </div>
-</div>
+                        <div
+                            class="w-full h-full aspect-square rounded-full p-1 bg-gradient-to-tr from-brand-600 via-brand-purple to-brand-cyan shadow-2xl shadow-brand-500/20">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 relative group">
+                                <img src="profile.jpeg" alt="Profile Picture"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    onerror="this.src='https://placehold.co/600x600/0f172a/ffffff?text=AI+Developer'">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60">
+                                </div>
+                                <div
+                                    class="absolute bottom-3 left-4 right-4 p-2 rounded-xl glass border border-white/10 text-center">
+                                    <p class="text-xs font-semibold text-white">PyTorch • HuggingFace • MLOps</p>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Floating Badges -->
-                        <div class="absolute -top-4 -right-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-3 rounded-2xl shadow-lg flex items-center space-x-2 animate-float">
+                        <div
+                            class="absolute -top-4 -right-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-3 rounded-2xl shadow-lg flex items-center space-x-2 animate-float">
                             <i class="fa-solid fa-robot text-brand-purple text-xl"></i>
                             <div class="text-xs">
                                 <p class="font-bold">LLM Fine-tuning</p>
@@ -205,7 +260,8 @@
                             </div>
                         </div>
 
-                        <div class="absolute -bottom-4 -left-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-3 rounded-2xl shadow-lg flex items-center space-x-2 animate-float" style="animation-delay: 1.5s;">
+                        <div class="absolute -bottom-4 -left-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-3 rounded-2xl shadow-lg flex items-center space-x-2 animate-float"
+                            style="animation-delay: 1.5s;">
                             <i class="fa-solid fa-chart-line text-emerald-500 text-xl"></i>
                             <div class="text-xs">
                                 <p class="font-bold">99.2% Accuracy</p>
@@ -219,10 +275,12 @@
     </section>
 
     <!-- ABOUT ME & STATS SECTION -->
-    <section id="about" class="py-16 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/80">
+    <section id="about"
+        class="py-16 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">Architecting Intelligence</h2>
+                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">
+                    Architecting Intelligence</h2>
                 <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">About My Journey in AI</p>
             </div>
 
@@ -230,13 +288,19 @@
                 <!-- Text Intro -->
                 <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
                     <p class="text-base sm:text-lg">
-                        I am an <strong class="text-slate-900 dark:text-white">AI/ML Engineer & Data Scientist</strong> dedicated to solving complex problems through data-driven innovation. With a strong foundation in computer science and mathematics, I specialize in building, training, and deploying high-performance machine learning models.
+                        I am an <strong class="text-slate-900 dark:text-white">AI/ML Engineer & Data Scientist</strong>
+                        dedicated to solving complex problems through data-driven innovation. With a strong foundation
+                        in computer science and mathematics, I specialize in building, training, and deploying
+                        high-performance machine learning models.
                     </p>
                     <p>
-                        My expertise spans across <strong>Natural Language Processing (LLM prompt engineering, RAG, LoRA)</strong>, <strong>Computer Vision (YOLO, Segmentation, GANs)</strong>, and end-to-end <strong>MLOps pipelines</strong> using Docker, MLflow, and cloud infrastructure.
+                        My expertise spans across <strong>Natural Language Processing (LLM prompt engineering, RAG,
+                            LoRA)</strong>, <strong>Computer Vision (YOLO, Segmentation, GANs)</strong>, and end-to-end
+                        <strong>MLOps pipelines</strong> using Docker, MLflow, and cloud infrastructure.
                     </p>
                     <p>
-                        I constantly bridge the gap between academic AI research and robust production systems, prioritizing scalable, efficient, and ethical AI algorithms.
+                        I constantly bridge the gap between academic AI research and robust production systems,
+                        prioritizing scalable, efficient, and ethical AI algorithms.
                     </p>
 
                     <!-- Quick Highlights -->
@@ -262,36 +326,48 @@
 
                 <!-- Stats Grid -->
                 <div class="grid grid-cols-2 gap-4 sm:gap-6">
-                    <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl">
+                    <div
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl">
                             <i class="fa-solid fa-diagram-project"></i>
                         </div>
                         <p class="text-3xl sm:text-4xl font-extrabold gradient-text">4+</p>
-                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">ML Projects Built</p>
+                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">ML Projects
+                            Built</p>
                     </div>
 
-                    <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-xl">
+                    <div
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-xl">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                         <p class="text-3xl sm:text-4xl font-extrabold gradient-text">5+</p>
-                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Certifications Earned</p>
+                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Certifications
+                            Earned</p>
                     </div>
 
-                    <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl">
+                    <div
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl">
                             <i class="fa-solid fa-rocket"></i>
                         </div>
                         <p class="text-3xl sm:text-4xl font-extrabold gradient-text">7+</p>
-                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Models Deployed</p>
+                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Models
+                            Deployed</p>
                     </div>
 
-                    <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
-                        <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xl">
+                    <div
+                        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xl">
                             <i class="fa-solid fa-code-commit"></i>
                         </div>
                         <p class="text-3xl sm:text-4xl font-extrabold gradient-text">10+</p>
-                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">GitHub Commits</p>
+                        <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">GitHub Commits
+                        </p>
                     </div>
                 </div>
             </div>
@@ -302,40 +378,62 @@
     <section id="courses" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
-                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">Continuous Learning</h2>
-                <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Courses & Certifications</p>
-                <p class="text-slate-600 dark:text-slate-400 mt-2">Verified expertise from top learning platforms and industry leaders.</p>
+                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">
+                    Continuous Learning</h2>
+                <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Courses & Certifications
+                </p>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Verified expertise from top learning platforms and
+                    industry leaders.</p>
             </div>
 
             <!-- Course Filter Buttons -->
             <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                <button class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-brand-600 text-white shadow-md transition-all" data-filter="all">All Courses</button>
-                <button class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="ml">Machine Learning</button>
-                <button class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="dl">Deep Learning</button>
-                <button class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="nlp">NLP & LLMs</button>
-                <button class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="mlops">MLOps & Cloud</button>
+                <button
+                    class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-brand-600 text-white shadow-md transition-all"
+                    data-filter="all">All Courses</button>
+                <button
+                    class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="ml">Machine Learning</button>
+                <button
+                    class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="dl">Deep Learning</button>
+                <button
+                    class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="nlp">NLP & LLMs</button>
+                <button
+                    class="course-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="mlops">MLOps & Cloud</button>
             </div>
 
             <!-- Courses Grid -->
             <div id="coursesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Course Card 1 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="dl">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="dl">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">DeepLearning.AI</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">DeepLearning.AI</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Deep Learning Specialization</h3>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Instructor: Andrew Ng • Coursera</p>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Deep Learning
+                                Specialization</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Instructor: Andrew Ng • Coursera
+                            </p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                Neural Networks, Hyperparameter tuning, CNNs, Sequence Models (RNNs, LSTMs, Transformers).
+                                Neural Networks, Hyperparameter tuning, CNNs, Sequence Models (RNNs, LSTMs,
+                                Transformers).
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">5 Courses Series</span>
-                            <button onclick="openCertModal('Deep Learning Specialization', 'DeepLearning.AI / Coursera', 'DL-2023-8901', 'Mastered neural network optimization, convolutional networks, and sequence modeling with PyTorch/TensorFlow.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('Deep Learning Specialization', 'DeepLearning.AI / Coursera', 'DL-2023-8901', 'Mastered neural network optimization, convolutional networks, and sequence modeling with PyTorch/TensorFlow.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -343,22 +441,31 @@
                 </div>
 
                 <!-- Course Card 2 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="ml">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="ml">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400">Stanford / Coursera</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400">Stanford
+                                    / Coursera</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Machine Learning Specialization</h3>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Machine Learning
+                                Specialization</h3>
                             <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Instructor: Andrew Ng</p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                Supervised learning, Unsupervised clustering, Decision Trees, Recommender Systems, and Reinforcement Learning fundamentals.
+                                Supervised learning, Unsupervised clustering, Decision Trees, Recommender Systems, and
+                                Reinforcement Learning fundamentals.
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">3 Courses Series</span>
-                            <button onclick="openCertModal('Machine Learning Specialization', 'Stanford Online / Coursera', 'ML-2023-4412', 'Comprehensive mastery of regression, classification, clustering, and evaluation metrics.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('Machine Learning Specialization', 'Stanford Online / Coursera', 'ML-2023-4412', 'Comprehensive mastery of regression, classification, clustering, and evaluation metrics.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -366,22 +473,32 @@
                 </div>
 
                 <!-- Course Card 3 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="nlp">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="nlp">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400">Hugging Face</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400">Hugging
+                                    Face</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">NLP & Transformers Course</h3>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Hugging Face Open Certification</p>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">NLP & Transformers Course
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Hugging Face Open Certification
+                            </p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                Fine-tuning LLMs, Tokenizers, PEFT, LoRA, Attention Mechanisms, and Deploying NLP Models on Hugging Face Hub.
+                                Fine-tuning LLMs, Tokenizers, PEFT, LoRA, Attention Mechanisms, and Deploying NLP Models
+                                on Hugging Face Hub.
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">Advanced Practical</span>
-                            <button onclick="openCertModal('NLP & Transformers Course', 'Hugging Face', 'HF-NLP-9921', 'Hands-on expertise in fine-tuning BERT, LLaMA, GPT models and building custom tokenizers.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('NLP & Transformers Course', 'Hugging Face', 'HF-NLP-9921', 'Hands-on expertise in fine-tuning BERT, LLaMA, GPT models and building custom tokenizers.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -389,22 +506,31 @@
                 </div>
 
                 <!-- Course Card 4 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="mlops">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="mlops">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">Duke University / Coursera</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">Duke
+                                    University / Coursera</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Building MLOps Pipelines</h3>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Building MLOps Pipelines
+                            </h3>
                             <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Instructor: Noah Gift</p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                CI/CD for Machine Learning, Docker, MLflow tracking, Kubeflow, Automated Data Drift monitoring, and AWS SageMaker.
+                                CI/CD for Machine Learning, Docker, MLflow tracking, Kubeflow, Automated Data Drift
+                                monitoring, and AWS SageMaker.
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">Specialization</span>
-                            <button onclick="openCertModal('Building MLOps Pipelines', 'Duke University / Coursera', 'MLOPS-7712', 'Covering containerization, continuous integration, model monitoring, and cloud deployment.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('Building MLOps Pipelines', 'Duke University / Coursera', 'MLOPS-7712', 'Covering containerization, continuous integration, model monitoring, and cloud deployment.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -412,22 +538,30 @@
                 </div>
 
                 <!-- Course Card 5 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="dl">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="dl">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">Udemy</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">Udemy</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Computer Vision Masterclass</h3>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Computer Vision
+                                Masterclass</h3>
                             <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">OpenCV, PyTorch & YOLO</p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                Real-time object detection with YOLOv8, Image Segmentation with Mask R-CNN, Pose Estimation, OpenCV image processing.
+                                Real-time object detection with YOLOv8, Image Segmentation with Mask R-CNN, Pose
+                                Estimation, OpenCV image processing.
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">Mastery Level</span>
-                            <button onclick="openCertModal('Computer Vision Masterclass', 'Udemy Certified', 'CV-UDEMY-1092', 'Built 10+ computer vision apps involving object detection, facial recognition, and image synthesis.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('Computer Vision Masterclass', 'Udemy Certified', 'CV-UDEMY-1092', 'Built 10+ computer vision apps involving object detection, facial recognition, and image synthesis.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -435,22 +569,32 @@
                 </div>
 
                 <!-- Course Card 6 -->
-                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="ml">
+                <div class="course-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="ml">
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-rose-500/10 text-rose-600 dark:text-rose-400">AWS Certification</span>
-                                <span class="text-xs font-medium text-emerald-500"><i class="fa-solid fa-certificate mr-1"></i> Verified</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-rose-500/10 text-rose-600 dark:text-rose-400">AWS
+                                    Certification</span>
+                                <span class="text-xs font-medium text-emerald-500"><i
+                                        class="fa-solid fa-certificate mr-1"></i> Verified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">AWS Certified Machine Learning</h3>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Specialty Credential (MLS-C01)</p>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">AWS Certified Machine
+                                Learning</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Specialty Credential (MLS-C01)
+                            </p>
                             <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
-                                Data engineering, ML exploratory analysis, modeling, deep learning architectures, and cloud deployment security.
+                                Data engineering, ML exploratory analysis, modeling, deep learning architectures, and
+                                cloud deployment security.
                             </p>
                         </div>
-                        <div class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
+                        <div
+                            class="pt-6 border-t border-slate-100 dark:border-slate-800/80 mt-4 flex items-center justify-between">
                             <span class="text-xs text-slate-500">Cloud Specialty</span>
-                            <button onclick="openCertModal('AWS Certified Machine Learning - Specialty', 'Amazon Web Services', 'AWS-MLS-88219', 'Certified ability to architect, build, and maintain production ML solutions on AWS.')" class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+                            <button
+                                onclick="openCertModal('AWS Certified Machine Learning - Specialty', 'Amazon Web Services', 'AWS-MLS-88219', 'Certified ability to architect, build, and maintain production ML solutions on AWS.')"
+                                class="text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline">
                                 View Certificate <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
                             </button>
                         </div>
@@ -462,51 +606,76 @@
     </section>
 
     <!-- PROJECTS / WORK SECTION -->
-    <section id="projects" class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/80">
+    <section id="projects"
+        class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
-                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">Portfolio Showcase</h2>
+                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">
+                    Portfolio Showcase</h2>
                 <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Featured AI Projects</p>
-                <p class="text-slate-600 dark:text-slate-400 mt-2">Real-world AI systems, fine-tuned models, and intelligent Web applications.</p>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Real-world AI systems, fine-tuned models, and
+                    intelligent Web applications.</p>
             </div>
 
             <!-- Project Filter Buttons -->
             <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                <button class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-brand-600 text-white shadow-md transition-all" data-filter="all">All Projects</button>
-                <button class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="llm">LLM & GenAI</button>
-                <button class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="cv">Computer Vision</button>
-                <button class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all" data-filter="analytics">Predictive Analytics</button>
+                <button
+                    class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-brand-600 text-white shadow-md transition-all"
+                    data-filter="all">All Projects</button>
+                <button
+                    class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="llm">LLM & GenAI</button>
+                <button
+                    class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="cv">Computer Vision</button>
+                <button
+                    class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-brand-500 transition-all"
+                    data-filter="analytics">Predictive Analytics</button>
             </div>
 
             <!-- Projects Grid -->
             <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                 <!-- Project 1 -->
-                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col" data-category="llm">
+                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col"
+                    data-category="llm">
                     <div class="relative h-52 overflow-hidden bg-slate-950">
-                        <img src="https://placehold.co/800x450/0f172a/3b82f6?text=RAG+Enterprise+Chatbot" alt="LLM RAG System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
-                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-brand-600 text-white shadow">GenAI / RAG</span>
+                        <img src="https://placehold.co/800x450/0f172a/3b82f6?text=RAG+Enterprise+Chatbot"
+                            alt="LLM RAG System"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-brand-600 text-white shadow">GenAI
+                            / RAG</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Enterprise RAG Knowledge Assistant</h3>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Enterprise RAG Knowledge
+                                Assistant</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                                Retrieval-Augmented Generation chatbot leveraging LangChain, ChromaDB vector stores, and LLaMA 3 fine-tuned for internal doc search with zero-hallucination guardrails.
+                                Retrieval-Augmented Generation chatbot leveraging LangChain, ChromaDB vector stores, and
+                                LLaMA 3 fine-tuned for internal doc search with zero-hallucination guardrails.
                             </p>
                             <!-- Tech Stack Tags -->
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">Python</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">LangChain</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">ChromaDB</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">FastAPI</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">Python</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">LangChain</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">ChromaDB</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-400">FastAPI</span>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 pt-4 border-t border-slate-100 dark:border-slate-800">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
+                            <a href="https://github.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
                                 <i class="fa-brands fa-github text-sm mr-2"></i> Code Repo
                             </a>
-                            <a href="#contact" class="flex-1 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
+                            <a href="#contact"
+                                class="flex-1 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
                                 <i class="fa-solid fa-arrow-up-right-from-square text-xs mr-2"></i> Live Demo
                             </a>
                         </div>
@@ -514,95 +683,175 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col" data-category="cv">
+                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col"
+                    data-category="cv">
                     <div class="relative h-52 overflow-hidden bg-slate-950">
-                        <img src="https://placehold.co/800x450/0f172a/8b5cf6?text=Realtime+YOLOv8+Tracker" alt="Computer Vision Tracker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
-                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-brand-purple text-white shadow">Computer Vision</span>
+                        <img src="https://placehold.co/800x450/0f172a/8b5cf6?text=Realtime+YOLOv8+Tracker"
+                            alt="Computer Vision Tracker"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-brand-purple text-white shadow">Computer
+                            Vision</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Autonomous Traffic & Object Tracker</h3>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Autonomous Traffic &
+                                Object Tracker</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                                Real-time video analytics pipeline utilizing YOLOv8 and DeepSORT to count, track, and categorize vehicles with 98.4% accuracy across multi-camera streams.
+                                Real-time video analytics pipeline utilizing YOLOv8 and DeepSORT to count, track, and
+                                categorize vehicles with 98.4% accuracy across multi-camera streams.
                             </p>
                             <!-- Tech Stack Tags -->
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">PyTorch</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">OpenCV</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">YOLOv8</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">TensorRT</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">PyTorch</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">OpenCV</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">YOLOv8</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-purple">TensorRT</span>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 pt-4 border-t border-slate-100 dark:border-slate-800">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-purple text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
+                            <a href="https://github.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-purple text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
                                 <i class="fa-brands fa-github text-sm mr-2"></i> Code Repo
                             </a>
-                            <a href="#contact" class="flex-1 py-2.5 rounded-xl bg-brand-purple hover:opacity-90 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
+                            <a href="#contact"
+                                class="flex-1 py-2.5 rounded-xl bg-brand-purple hover:opacity-90 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
                                 <i class="fa-solid fa-arrow-up-right-from-square text-xs mr-2"></i> Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col" data-category="analytics">
-                    <div class="relative h-52 overflow-hidden bg-slate-950">
-                        <img src="https://placehold.co/800x450/0f172a/06b6d4?text=Predictive+Maintenance+ML" alt="Predictive Analytics Pipeline" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
-                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-brand-cyan text-white shadow">Predictive ML</span>
+                <!-- Flight Price Prediction Project Card (Exact Match with Right Card Style) -->
+                <div
+                    class="bg-[#111827] rounded-xl overflow-hidden border border-gray-800 flex flex-col justify-between h-full group">
+
+                    <!-- Top Banner Area with Exact Style & Font -->
+                    <div
+                        class="relative h-44 w-full bg-gradient-to-br from-emerald-950/30 via-slate-900 to-gray-900 p-6 flex flex-col justify-between border-b border-gray-800">
+                        <!-- Background Aviation Image with Smooth Dark Overlay -->
+                        <div
+                            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-20 group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-black/50"></div>
+
+                        <!-- Top Left Badge (Matching Green Style) -->
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-emerald-400 bg-emerald-950/80 rounded-full border border-emerald-800/60 shadow-sm">
+                                Machine Learning
+                            </span>
+                        </div>
+
+                        <!-- Big Center Styled Title (Matching "Autonomous AI Agent") -->
+                        <div class="relative z-10 text-center my-auto">
+                            <h2
+                                class="text-3xl font-extrabold text-emerald-400 tracking-wide drop-shadow-[0_4px_12px_rgba(16,185,129,0.3)]">
+                                Flight Price Prediction
+                            </h2>
+                        </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+
+                    <!-- Content & Details Area -->
+                    <div class="p-6 flex flex-col justify-between flex-grow">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Industrial Equipment Maintenance Predictor</h3>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                                Time-series anomaly detection and remaining useful life (RUL) forecasting using LightGBM, XGBoost, and Autoencoders integrated with Streamlit dashboard.
+                            <!-- Subheading / Title inside body -->
+                            <h3 class="text-xl font-bold text-white mb-2">
+                                Flight Price Prediction System
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                An interactive end-to-end ML application built with Streamlit to predict flight fares
+                                based on historical data, airline operators, routes, and departure schedules.
                             </p>
-                            <!-- Tech Stack Tags -->
+
+                            <!-- Tech Stack Badges (Green/Teal matching theme vibe) -->
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-cyan">Scikit-Learn</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-cyan">XGBoost</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-cyan">Pandas</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-brand-cyan">Streamlit</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-emerald-300 bg-emerald-950/40 rounded border border-emerald-900/40">Python</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-emerald-300 bg-emerald-950/40 rounded border border-emerald-900/40">Scikit-Learn</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-emerald-300 bg-emerald-950/40 rounded border border-emerald-900/40">Streamlit</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-emerald-300 bg-emerald-950/40 rounded border border-emerald-900/40">Pandas</span>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-3 pt-4 border-t border-slate-100 dark:border-slate-800">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-cyan text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
-                                <i class="fa-brands fa-github text-sm mr-2"></i> Code Repo
+
+                        <!-- Bottom Buttons (Matching Exact Style & Green Live Demo Button) -->
+                        <div class="grid grid-cols-2 gap-3 mt-auto">
+                            <a href="https://github.com/rajababu-aiml/Flight_Price_Prediction" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-full py-2.5 px-4 bg-gray-800/80 hover:bg-gray-700 text-white text-xs font-semibold rounded-lg flex items-center justify-center gap-2 transition-all border border-gray-700">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg>
+                                Code Repo
                             </a>
-                            <a href="#contact" class="flex-1 py-2.5 rounded-xl bg-brand-cyan hover:opacity-90 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
-                                <i class="fa-solid fa-arrow-up-right-from-square text-xs mr-2"></i> Live Demo
+                            <a href="https://ai-ml-projects-fsevculb67kgzexaduiotd.streamlit.app/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-lg flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-600/20">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                                Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col" data-category="llm">
+                <div class="project-card rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col"
+                    data-category="llm">
                     <div class="relative h-52 overflow-hidden bg-slate-950">
-                        <img src="https://placehold.co/800x450/0f172a/10b981?text=Autonomous+AI+Agent" alt="Autonomous AI Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
-                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-600 text-white shadow">AI Agents</span>
+                        <img src="https://placehold.co/800x450/0f172a/10b981?text=Autonomous+AI+Agent"
+                            alt="Autonomous AI Agent"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-600 text-white shadow">AI
+                            Agents</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Autonomous Web Research & Coding Agent</h3>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Autonomous Web Research &
+                                Coding Agent</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                                Self-correcting AI agent framework using CrewAI and OpenAI GPT-4 API to auto-generate reports, execute web searches, and compile code snippets autonomously.
+                                Self-correcting AI agent framework using CrewAI and OpenAI GPT-4 API to auto-generate
+                                reports, execute web searches, and compile code snippets autonomously.
                             </p>
                             <!-- Tech Stack Tags -->
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">CrewAI</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">OpenAI API</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">Serper API</span>
-                                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">Docker</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">CrewAI</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">OpenAI
+                                    API</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">Serper
+                                    API</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-emerald-500">Docker</span>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 pt-4 border-t border-slate-100 dark:border-slate-800">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-emerald-500 text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
+                            <a href="https://github.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-emerald-500 text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center transition-colors">
                                 <i class="fa-brands fa-github text-sm mr-2"></i> Code Repo
                             </a>
-                            <a href="#contact" class="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
+                            <a href="#contact"
+                                class="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center justify-center transition-colors shadow">
                                 <i class="fa-solid fa-arrow-up-right-from-square text-xs mr-2"></i> Live Demo
                             </a>
                         </div>
@@ -617,16 +866,20 @@
     <section id="skills" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">Technical Proficiency</h2>
+                <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">
+                    Technical Proficiency</h2>
                 <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Skills & Tech Stack</p>
-                <p class="text-slate-600 dark:text-slate-400 mt-2">Tools, libraries, and frameworks I use to engineer modern AI models.</p>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Tools, libraries, and frameworks I use to engineer
+                    modern AI models.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Programming Languages -->
-                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+                <div
+                    class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-lg">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-lg">
                             <i class="fa-solid fa-code"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white">Languages</h3>
@@ -639,7 +892,8 @@
                                 <span class="text-brand-600 dark:text-brand-400">95%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan" style="width: 95%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan"
+                                    style="width: 95%"></div>
                             </div>
                         </div>
 
@@ -649,7 +903,8 @@
                                 <span class="text-brand-600 dark:text-brand-400">88%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan" style="width: 88%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan"
+                                    style="width: 88%"></div>
                             </div>
                         </div>
 
@@ -659,7 +914,8 @@
                                 <span class="text-brand-600 dark:text-brand-400">75%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan" style="width: 75%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan"
+                                    style="width: 75%"></div>
                             </div>
                         </div>
 
@@ -669,16 +925,19 @@
                                 <span class="text-brand-600 dark:text-brand-400">70%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan" style="width: 70%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-600 to-brand-cyan"
+                                    style="width: 70%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- AI Frameworks & Libraries -->
-                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+                <div
+                    class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-lg">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-lg">
                             <i class="fa-solid fa-microchip"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white">AI / ML Frameworks</h3>
@@ -691,7 +950,8 @@
                                 <span class="text-brand-purple">92%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500" style="width: 92%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500"
+                                    style="width: 92%"></div>
                             </div>
                         </div>
 
@@ -701,7 +961,8 @@
                                 <span class="text-brand-purple">90%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500" style="width: 90%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
 
@@ -711,7 +972,8 @@
                                 <span class="text-brand-purple">82%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500" style="width: 82%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500"
+                                    style="width: 82%"></div>
                             </div>
                         </div>
 
@@ -721,16 +983,19 @@
                                 <span class="text-brand-purple">95%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500" style="width: 95%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-purple to-indigo-500"
+                                    style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- MLOps & Tools -->
-                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+                <div
+                    class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-lg">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-lg">
                             <i class="fa-solid fa-gears"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white">MLOps & Cloud</h3>
@@ -743,7 +1008,8 @@
                                 <span class="text-brand-cyan">85%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400" style="width: 85%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400"
+                                    style="width: 85%"></div>
                             </div>
                         </div>
 
@@ -753,7 +1019,8 @@
                                 <span class="text-brand-cyan">88%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400" style="width: 88%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400"
+                                    style="width: 88%"></div>
                             </div>
                         </div>
 
@@ -763,7 +1030,8 @@
                                 <span class="text-brand-cyan">80%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400" style="width: 80%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400"
+                                    style="width: 80%"></div>
                             </div>
                         </div>
 
@@ -773,7 +1041,8 @@
                                 <span class="text-brand-cyan">90%</span>
                             </div>
                             <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400" style="width: 90%"></div>
+                                <div class="h-full rounded-full bg-gradient-to-r from-brand-cyan to-teal-400"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
@@ -781,70 +1050,98 @@
             </div>
 
             <!-- Technology Icons Badges -->
-            <div class="mt-12 flex flex-wrap justify-center items-center gap-4 text-slate-500 dark:text-slate-400 text-sm font-medium">
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-brands fa-python text-amber-500 mr-2 text-lg"></i> Python</span>
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-solid fa-fire text-orange-500 mr-2 text-lg"></i> PyTorch</span>
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-brands fa-docker text-blue-500 mr-2 text-lg"></i> Docker</span>
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-brands fa-aws text-amber-600 mr-2 text-lg"></i> AWS SageMaker</span>
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-solid fa-eye text-emerald-500 mr-2 text-lg"></i> OpenCV</span>
-                <span class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i class="fa-solid fa-database text-purple-500 mr-2 text-lg"></i> Vector DBs</span>
+            <div
+                class="mt-12 flex flex-wrap justify-center items-center gap-4 text-slate-500 dark:text-slate-400 text-sm font-medium">
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-brands fa-python text-amber-500 mr-2 text-lg"></i> Python</span>
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-solid fa-fire text-orange-500 mr-2 text-lg"></i> PyTorch</span>
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-brands fa-docker text-blue-500 mr-2 text-lg"></i> Docker</span>
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-brands fa-aws text-amber-600 mr-2 text-lg"></i> AWS SageMaker</span>
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-solid fa-eye text-emerald-500 mr-2 text-lg"></i> OpenCV</span>
+                <span
+                    class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center"><i
+                        class="fa-solid fa-database text-purple-500 mr-2 text-lg"></i> Vector DBs</span>
             </div>
         </div>
     </section>
 
     <!-- CONTACT & FOOTER SECTION -->
-    <section id="contact" class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800/80">
+    <section id="contact"
+        class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
+
                 <!-- Left Details -->
                 <div class="lg:col-span-5 space-y-6">
                     <div>
-                        <h2 class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">Let's Connect</h2>
+                        <h2
+                            class="text-xs font-bold text-brand-600 dark:text-brand-cyan uppercase tracking-widest mb-2">
+                            Let's Connect</h2>
                         <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Get In Touch</p>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Interested in collaboration, machine learning consulting, or hiring an AI Engineer for your team? Send me a message and I'll get back to you promptly.
+                        Interested in collaboration, machine learning consulting, or hiring an AI Engineer for your
+                        team? Send me a message and I'll get back to you promptly.
                     </p>
 
                     <div class="space-y-4 pt-2">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Email Me</h4>
-                                <a href="mailto:Raj Maurya.ai@example.com" class="text-sm font-semibold text-slate-900 dark:text-white hover:text-brand-600">rajmaurya5424@gmail.com</a>
+                                <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Email Me
+                                </h4>
+                                <a href="mailto:Raj Maurya.ai@example.com"
+                                    class="text-sm font-semibold text-slate-900 dark:text-white hover:text-brand-600">rajmaurya5424@gmail.com</a>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Location</h4>
-                                <p class="text-sm font-semibold text-slate-900 dark:text-white">Banglore India (Open to Remote)</p>
+                                <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Location
+                                </h4>
+                                <p class="text-sm font-semibold text-slate-900 dark:text-white">Banglore India (Open to
+                                    Remote)</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Social Icons -->
                     <div class="pt-4">
-                        <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold mb-3">Connect across platforms</h4>
+                        <h4 class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold mb-3">Connect
+                            across platforms</h4>
                         <div class="flex space-x-3">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
+                            <a href="https://github.com" target="_blank" rel="noopener"
+                                class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
                                 <i class="fa-brands fa-github text-lg"></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener"
+                                class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
                                 <i class="fa-brands fa-linkedin-in text-lg"></i>
                             </a>
-                            <a href="https://kaggle.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
+                            <a href="https://kaggle.com" target="_blank" rel="noopener"
+                                class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
                                 <i class="fa-brands fa-kaggle text-lg"></i>
                             </a>
-                            <a href="https://instagram.com/iam_devil.12x/" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
+                            <a href="https://instagram.com/iam_devil.12x/" target="_blank" rel="noopener"
+                                class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-brand-500 hover:border-brand-500 transition-all shadow-sm">
                                 <i class="fa-brands fa-instagram text-lg"></i>
-                            
+
                             </a>
                         </div>
                     </div>
@@ -852,32 +1149,45 @@
 
                 <!-- Right Interactive Contact Form -->
                 <div class="lg:col-span-7">
-                    <form id="contactForm" class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-4">
+                    <form id="contactForm"
+                        class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="userName" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Name</label>
-                                <input type="text" id="userName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
+                                <label for="userName"
+                                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your
+                                    Name</label>
+                                <input type="text" id="userName" required placeholder="John Doe"
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
                             </div>
                             <div>
-                                <label for="userEmail" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Email</label>
-                                <input type="email" id="userEmail" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
+                                <label for="userEmail"
+                                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your
+                                    Email</label>
+                                <input type="email" id="userEmail" required placeholder="john@example.com"
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
                             </div>
                         </div>
 
                         <div>
-                            <label for="userSubject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Subject</label>
-                            <input type="text" id="userSubject" required placeholder="Project Collaboration / AI Hiring" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
+                            <label for="userSubject"
+                                class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Subject</label>
+                            <input type="text" id="userSubject" required placeholder="Project Collaboration / AI Hiring"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
                         </div>
 
                         <div>
-                            <label for="userMessage" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Message</label>
-                            <textarea id="userMessage" rows="5" required placeholder="Write your project details or message here..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all resize-none"></textarea>
+                            <label for="userMessage"
+                                class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Message</label>
+                            <textarea id="userMessage" rows="5" required
+                                placeholder="Write your project details or message here..."
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all resize-none"></textarea>
                         </div>
 
                         <!-- Notification Box inside form -->
                         <div id="formNotification" class="hidden p-3 rounded-xl text-xs font-medium text-center"></div>
 
-                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-purple to-brand-cyan text-white font-semibold shadow-md hover:shadow-lg transition-all hover:scale-[1.01] flex items-center justify-center">
+                        <button type="submit"
+                            class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-purple to-brand-cyan text-white font-semibold shadow-md hover:shadow-lg transition-all hover:scale-[1.01] flex items-center justify-center">
                             <i class="fa-solid fa-paper-plane mr-2"></i> Send Message
                         </button>
                     </form>
@@ -892,8 +1202,10 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
                 <!-- Brand Info -->
                 <div class="space-y-1">
-                    <span class="text-xl font-bold tracking-tight">AI/ML<span class="gradient-text"> Raj Maurya</span></span>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">Building next-gen artificial intelligence & neural solutions.</p>
+                    <span class="text-xl font-bold tracking-tight">AI/ML<span class="gradient-text"> Raj
+                            Maurya</span></span>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Building next-gen artificial intelligence &
+                        neural solutions.</p>
                 </div>
 
                 <!-- Navigation Quick Links -->
@@ -915,26 +1227,33 @@
     </footer>
 
     <!-- CERTIFICATE PREVIEW MODAL -->
-    <div id="certModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
-        <div class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-6">
-            <button onclick="closeCertModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center transition-colors">
+    <div id="certModal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-6">
+            <button onclick="closeCertModal()"
+                class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center transition-colors">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="text-center space-y-2">
-                <div class="w-16 h-16 mx-auto rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-3xl">
+                <div
+                    class="w-16 h-16 mx-auto rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-3xl">
                     <i class="fa-solid fa-award"></i>
                 </div>
                 <h3 id="modalCertTitle" class="text-2xl font-bold text-slate-900 dark:text-white"></h3>
                 <p id="modalCertIssuer" class="text-xs font-semibold text-brand-600 dark:text-brand-400"></p>
             </div>
-            
-            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs space-y-2 text-slate-600 dark:text-slate-300">
-                <p><strong>Credential ID:</strong> <span id="modalCertId" class="font-mono text-brand-purple"></span></p>
+
+            <div
+                class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs space-y-2 text-slate-600 dark:text-slate-300">
+                <p><strong>Credential ID:</strong> <span id="modalCertId" class="font-mono text-brand-purple"></span>
+                </p>
                 <p id="modalCertDesc" class="leading-relaxed"></p>
             </div>
 
             <div class="flex justify-end space-x-3">
-                <button onclick="closeCertModal()" class="px-5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">Close</button>
+                <button onclick="closeCertModal()"
+                    class="px-5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">Close</button>
             </div>
         </div>
     </div>
@@ -995,7 +1314,7 @@
 
         function typeEffect() {
             const currentRole = roles[roleIndex];
-            
+
             if (isDeleting) {
                 typedTextElement.textContent = currentRole.substring(0, charIndex - 1);
                 charIndex--;
@@ -1084,7 +1403,7 @@
 
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             formNotification.className = 'p-3 rounded-xl text-xs font-medium text-center bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20';
             formNotification.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Thank you! Your message has been sent successfully.';
             formNotification.classList.remove('hidden');
@@ -1097,4 +1416,5 @@
         });
     </script>
 </body>
+
 </html>
